@@ -23,7 +23,7 @@ The Edge cluster could be on the cloud providers or on standalone vmware environ
 4. Delete helm release to deregister application ```helm delete <release-name> --purge --tls```
 
 
-![]()
+![View of the Guestbook Application](https://github.com/antonyp63/Guestbook/blob/master/Guestbook_app.png)
 
 
 
