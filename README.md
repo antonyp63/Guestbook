@@ -21,9 +21,10 @@ The Edge cluster could be on the cloud providers or on standalone vmware environ
 3. or CLI ```helm install gbapp -n <release-name> --tls ```
 3. Update placement related values to redeploy application
 4. Delete helm release to deregister application ```helm delete <release-name> --purge --tls```
+5. Example of the Guestbook Application:
 
 
-![View of the Guestbook Application](https://github.com/antonyp63/Guestbook/blob/master/Guestbook_app.jpg)
+![View of the Guestbook Application](https://raw.githubusercontent.com/antonyp63/Guestbook/master/Guestbook_app.jpg)
 
 
 
@@ -84,5 +85,10 @@ spec:
       
       
 ```
+
+
+kubectl get clusterimagepolicy
+
+kubectl edit clusterimagepolicy ibmcloud-default-cluster-image-policy
 
 
