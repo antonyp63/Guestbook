@@ -2,18 +2,29 @@
 
 Deploying a Guestbook application using MCM manager hub cluster and multiply Edge clusters
 
-### Pre
+## Pre
 
-MCM Hub cluster with 2 or more Worker nodes, Management node and Master/Proxy nodes
-
-Multi Edge Clusters with one Master/Proxy node and on Worker node.
-
-The Edge cluster could be on the cloud providers or on standalone vmware environments
-
-Network conactivity between the Hub cluster and the Edge Clusters, with the appropate firewalls ports open.
-
-Guestbook Application
+1. MCM Hub cluster with 2 or more Worker nodes, Management node and Master/Proxy nodes.
+2. Multi Edge Clusters with one Master/Proxy node and on Worker node.
+The Edge cluster could be on the cloud providers or on standalone vmware environments.
+3. Network conactivity between the Hub cluster and the Edge Clusters, with the appropate firewalls ports open.
+4. Guestbook Application
  
+
+
+## Usage
+0. Clone the repo ```git clone ....``` 
+1. Package Guestbook 'app' into a charts with ```helm package gbapp```
+2. log in MCM Hub Cluster ```cloudctl login -a <https:x.x.x.x:8443>```
+1. Load application charts into ICP with ```cloudctl catalog load-chart --archive gbapp-0.1.2.tgz```
+2. Install application chart with GUI ```Catalog (top right), search for gbapp   ```
+3. or CLI ```helm install gbapp -n <release-name> --tls ```
+3. Update placement related values to redeploy application
+4. Delete helm release to deregister application ```helm delete <release-name> --purge --tls```
+
+
+![]()
+
 
 
 ```
