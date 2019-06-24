@@ -6,5 +6,6 @@ targetCluster:
   labelSelector:
     matchLabels:
       store-location: local-cluster
+      environment: Prod
   resourceSelector:
     type: cpu
