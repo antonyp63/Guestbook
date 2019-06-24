@@ -14,7 +14,7 @@ spec:
   clusterLabels:
     matchLabels:
 {{ toYaml .Values.targetCluster.labelSelector.matchLabels | indent 6 }}
-  resourceHint: 
+  resourceHint:
 {{ toYaml .Values.targetCluster.resourceSelector | indent 4 }}
   compliances: {{ .Values.targetCluster.compliances }}
 ---
@@ -34,5 +34,5 @@ spec:
   clusterLabels:
     matchLabels:
 {{ toYaml .Values.targetCluster.labelSelector.matchLabels | indent 6 }}
-  resourceHint: 
+  resourceHint:
 {{ toYaml .Values.targetCluster.resourceSelector | indent 4 }}
