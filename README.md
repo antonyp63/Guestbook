@@ -13,7 +13,7 @@ The Edge cluster could be on the cloud providers or on standalone vmware environ
 
 
 ## Usage
-0. Clone the repo ```git clone ....``` 
+0. Clone the repo ```git clone ....``` or ```kubectl apply -f https://raw.githubusercontent.com/google/metallb/v0.7.3/manifests/metallb.yaml```
 1. Package Guestbook 'app' into a charts with ```helm package gbapp```
 2. log in MCM Hub Cluster ```cloudctl login -a <https:x.x.x.x:8443>```
 1. Load application charts into ICP with ```cloudctl catalog load-chart --archive gbapp-0.1.x.tgz```
