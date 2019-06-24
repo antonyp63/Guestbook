@@ -85,10 +85,14 @@ spec:
       
       
 ```
+## Applications fail to install during Helm deployment
 
-
+```
 kubectl get clusterimagepolicy
 
 kubectl edit clusterimagepolicy ibmcloud-default-cluster-image-policy
 
+- name: gcr.io/google-samples/*
+- name: gcr.io/kubernetes-e2e-test-images/*
+```
 
