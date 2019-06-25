@@ -2,7 +2,7 @@
 
 Deploying a Guestbook application using MCM manager hub cluster and multiply Edge clusters
 
-## Pre
+## Pre-rec
 
 1. MCM Hub cluster with 2 or more Worker nodes, Management node and Master/Proxy nodes.
 2. Multi Edge Clusters with one Master/Proxy node and on Worker node.
